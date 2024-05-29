@@ -1,2 +1,2 @@
-# Actividades
+# Actividad
 Derisbel Maria Ruiz Boitel
