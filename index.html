@@ -4,98 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad Unidad2</title>
+    <title>Actividad 1</title>
 </head>
 <body>
+    
+<h1>1.¿Que es un sistema operativo?</h1>
 
-<H1>1-¿Cuáles son las principales funciones de un kernel en la arquitectura 
-de un sistema operativo y cómo interactúa con el hardware?</H1>
-    <p>se encarga de tareas fundamentales como la gestión de memoria, la administración
-     de procesos y la coordinación de las operaciones de entrada/salida.</p>
+    <p>son los programas encargados de administrar y gestionar de manera ç
+    eficiente todos los recursos de un ordenador y otros dispositivos</p>
 
-<H2>Como interactúa </H2>
+<h1>2.Componentes de un Sistema Operativo </h1>
 
-    <p>Actúa como enlace entre recursos y procesos, asigna la memoria a los procesos y, si
-     algún proceso requiere acceso a algún componente de hardware, el kernel se lo adjudica.</p>
+<h2>Núcleo</h2>
 
-<H1>2-¿Cómo se gestionan los procesos y cuál es la importancia de la multitarea en la eficiencia del sistema?</H1>
+    <p>En informática, un núcleo o kernel (de la raíz germánica Kern, 'núcleo', 'hueso')
+     es un software que constituye una parte fundamental del sistema operativo, y se define 
+     como la parte que se ejecuta en modo privilegiado (conocido también como modo núcleo). </p>
 
-<H2>Gestión de Procesos:</H2>
-    <li>Planificación de Procesos: El sistema operativo decide qué proceso se ejecuta en cada momento y cómo 
-    se asigna el tiempo de CPU a cada uno. Esto se hace mediante algoritmos de planificación que pueden priorizar la equidad, 
-    la prioridad, o minimizar el tiempo de respuesta, entre otros objetivos.</li><br>
+<h2>Controladores de dispositivos</h2>
 
-    <li>Creación y Terminación de Procesos: El sistema operativo permite la creación y destrucción de procesos. Cuando un
-    programa se ejecuta, se crea un proceso que representa la instancia de ese programa en ejecución. Cuando termina, el proceso se elimina.</li><br>
+    <p>Un controlador de dispositivo o manejador de dispositivo (en inglés: device driver, o simplemente 
+    driver)​ es un programa informático que permite al sistema operativo interactuar con un periférico, 
+    haciendo una abstracción del hardware y proporcionando una interfaz (posiblemente estandarizada) para utilizar el dispositivo.7​</p>
 
-    <li>Comunicación y Sincronización: Los procesos pueden necesitar comunicarse entre sí o sincronizarse para compartir recursos o asegurar la 
-    coherencia de los datos. El sistema operativo proporciona mecanismos para la comunicación y sincronización entre procesos, como semáforos, mutex, colas, etc.</li><br>
+<h2>Gestión de procesos</h2>
 
-    <li>Gestión de Recursos: El sistema operativo asigna y gestiona los recursos del sistema (CPU, memoria, dispositivos de entrada/salida) entre los procesos de manera
-     eficiente y equitativa.</li><br>
-   
-<H2>Importancia de la Multitarea:</H2>
+    <p>Un proceso es simplemente, un programa en ejecución que necesita recursos para realizar su tarea: tiempo de CPU, memoria, archivos y 
+    dispositivos de E/S. El SO es el responsable de lo siguiente:</p>
+    
+    <li>Crear y destruir procesos.</li>
+    <li>Parar y reanudar procesos.</li>
+    <li>Ofrecer mecanismos para que los procesos puedan comunicarse y se sincronicen.</li>
 
-    <p>La multitarea es la capacidad de un sistema operativo para ejecutar múltiples tareas o procesos aparentemente simultáneamente. Aquí tienes por qué es importante para 
-    la eficiencia del sistema:</p><br>
+<h2>Gestión de la memoria</h2>
 
-    <li>Mejora del Rendimiento: Permite que múltiples usuarios o aplicaciones compartan recursos de manera eficiente, maximizando la utilización de la CPU y otros recursos.</li><br>
+    <p>La gestión de memoria o administración de memoria es el acto de gestionar la memoria de un dispositivo informático.
+     El proceso de asignación de memoria a los programas que la solicitan.</p>
 
-    <li>Incrementa la Productividad: Los usuarios pueden ejecutar varias aplicaciones al mismo tiempo, realizando diferentes tareas sin esperar a que una se complete antes de iniciar otra.</li><br>
+<h2>Gestión del almacenamiento secundario</h2>
+    <p>Un sistema de almacenamiento secundario es necesario, ya que la memoria principal (almacenamiento primario) es volátil 
+    y además muy pequeña para almacenar todos los programas y datos. También es necesario mantener los datos que no convenga mantener
+     en la memoria principal. El SO se encarga de:</p>
 
-    <li>Tiempo de Respuesta: La multitarea proporciona un tiempo de respuesta más rápido a los usuarios al permitir que el sistema operativo maneje múltiples solicitudes de manera simultánea.</li><br>
+     <li>Planificar los discos.</li>
+     <li>Gestionar el espacio libre.</li>
+     <li>Asignar el almacenamiento.</li>
+     <li>Verificar que los datos se guarden en orden.</li>
 
-    <li>Optimización de Recursos: Al asignar recursos según las necesidades de cada proceso y gestionar la concurrencia de manera eficiente, la multitarea ayuda a optimizar el uso de la memoria y
-     otros recursos del sistema.</li><br>
+<h2>Sistema de entrada y salida</h2>
+    <p>Consiste en un sistema de almacenamiento temporal (caché), una interfaz de manejadores de dispositivos y otra para dispositivos
+     concretos. El sistema operativo debe gestionar el almacenamiento temporal de E/S y servir las interrupciones de los dispositivos de E/S.</p>
 
-<H1>3-¿Qué medidas de seguridad se pueden implementar a nivel de sistema operativo para proteger una red, especialmente en entornos empresariales?</H1>
+<h2>Sistema de archivos</h2>
+    <p>Un sistema de archivos o sistema de ficheros, (file system: fs), en informática, es un elemento que controla cómo se almacenan y recuperan 
+    los datos. Sin un sistema de archivos, los datos colocados en un medio de almacenamiento serían un gran cuerpo de datos sin manera de saber dónde
+    termina un dato y comienza el siguiente. Es el encargado de administrar y facilitar el uso de las memorias periféricas o internas, ya sean secundarias
+     o terciarias.​</p>
 
+<h2>Sistemas de protección</h2>
+    <p>Mecanismo que controla el acceso de los programas o los usuarios a los recursos del sistema. El SO se encarga de:</p>
 
-<H2>1.Firewall:</H2>
+    <li>Distinguir entre uso autorizado y no autorizado.</li>
+    <li>Especificar los controles de seguridad a realizar.</li>
+    <li>Forzar el uso de estos mecanismos de protección.</li>
 
-    <li>Configurar un firewall en cada dispositivo para controlar el tráfico de red entrante y saliente.</li><br>
+<h2>Sistema de comunicaciones</h2>
+    <p>Para mantener las comunicaciones con otros sistemas es necesario poder controlar el envío y recepción de información a 
+    través de las interfaces de red. También hay que crear y mantener puntos de comunicación que sirvan a las aplicaciones para 
+    enviar y recibir información, y crear y mantener conexiones virtuales entre aplicaciones que están ejecutándose localmente y otras que lo hacen remotamente.</p>
 
-    <li>Definir reglas estrictas para permitir solo el tráfico necesario para el funcionamiento del sistema y las aplicaciones.</li><br>
+<h2>Programas de sistema</h2>
 
-<H2>2.Actualizaciones y Parches:</H2>
+    <p>Son aplicaciones de utilidad que se suministran con el SO pero no forman parte de él. Ofrecen un entorno útil para el desarrollo y ejecución de programas, siendo 
+    algunas de las tareas que realizan:</p><br>
 
-    <li>Mantener actualizado el sistema operativo y todas las aplicaciones con los últimos parches de seguridad.</li><br>
+    <li>Manipulación y modificación de archivos.</li>
+    <li>Información del estado del sistema.</li>
+    <li>Soporte a lenguajes de programación.</li>
+    <li>Comunicaciones.</li>
 
-    <li>Automatizar la instalación de actualizaciones para evitar vulnerabilidades conocidas.</li><br>
+<h2>Gestor de recursos</h2>
 
-<H2>3.Políticas de Seguridad:</H2>
+    <p>Como gestor de recursos, el sistema operativo administra:</p>
 
-    <li>Implementar políticas de seguridad claras y robustas que regulen el uso de contraseñas, acceso a recursos y dispositivos.</li><br>
+    <li>La unidad central de procesamiento (donde está alojado el microprocesador).</li>
+    <li>Los dispositivos de entrada y salida.</li>
+    <li>La memoria principal (o de acceso directo).</li>
+    <li>Los discos (o memoria secundaria).</li>
+    <li>Los procesos (o programas en ejecución).</li>
 
-    <li>Aplicar el principio de privilegio mínimo para restringir el acceso a recursos sensibles solo a usuarios autorizados.</li><br>
-
-<H2>4.Auditorías y Monitoreo:</H2>
-    <li>Establecer sistemas de monitoreo para detectar actividades inusuales o posibles intrusiones en tiempo real.</li><br>
-
-    <li>Realizar auditorías periódicas de seguridad para identificar y corregir posibles debilidades en la configuración del sistema.</li><br>
-
-<H2>5.Cifrado de Datos:</H2>
-    <li>Utilizar cifrado para proteger la integridad y confidencialidad de los datos sensibles tanto en reposo como en tránsito.</li><br>
-
-    <li>Implementar políticas que exijan el cifrado de datos en dispositivos móviles y unidades de almacenamiento externo.</li><br>
-
-<H2>6.Control de Acceso:</H2>
-    <li>Configurar controles de acceso basados en roles para limitar quién puede acceder a qué recursos y qué acciones pueden realizar.</li><br>
-
-    <li>Implementar autenticación multifactor (MFA) para fortalecer la autenticación de usuarios.</li><br>
-
-<H2>7.Gestión de Vulnerabilidades:</H2>
-
-    <li>Utilizar herramientas de escaneo de vulnerabilidades para identificar y corregir posibles vulnerabilidades en el sistema operativo y las aplicaciones.</li><br>
-
-<H2>8.Protección contra Malware:</H2>
-
-    <li>Instalar y mantener actualizado software antivirus y antimalware en todos los dispositivos.</li><br>
-
-    <li>Configurar análisis periódicos y en tiempo real para detectar y mitigar amenazas de malware.</li><br>
+<h2>Interfaz de usuario</h2>
+    <p>La interfaz de usuario, IU (del inglés User Interface, UI), es el medio que permite la comunicación entre un usuario y una máquina, 
+    equipo, computadora o dispositivo, y comprende todos los puntos de contacto entre el usuario y el equipo</p>
 
 
+<h1>3.Tareas del Sistema Operativo</h1>
 
+    <p>Las tareas del sistema operativo incluyen la gestión de recursos del hardware (como la CPU, la memoria y los dispositivos de entrada/salida), 
+    la administración de archivos y directorios, la gestión de procesos (ejecución de programas), la gestión de la seguridad y control de acceso, así como la interfaz de usuario para interactuar con el sistema.</p>
+
+<h1>4.Funciones de un Sistema Operativo</h1>
+
+    <p>Las funciones principales de un sistema operativo son gestionar recursos del hardware, proporcionar una interfaz para que los usuarios y las 
+    aplicaciones interactúen con el sistema, facilitar la ejecución de programas (gestión de procesos), administrar archivos y directorios, controlar la seguridad y acceso a recursos, y gestionar la memoria y los dispositivos.</p>
+
+<h1>5.Características de un Sistema Operativo </h1>
+
+    <p>Las características típicas de un sistema operativo incluyen la multitarea (capacidad para ejecutar varios programas simultáneamente), la multiprocesamiento 
+    (gestión eficiente de múltiples núcleos de CPU), la multiusuario (soporte para múltiples usuarios concurrentes), la portabilidad (capacidad de funcionar en diferentes tipos de hardware), la seguridad (control de acceso a recursos), la compatibilidad con redes, y una interfaz de usuario.</p>
+
+<h1>6.Tipos de Sistema Operativo</h1>
+    <p>Los tipos de sistemas operativos incluyen sistemas operativos de escritorio (como Windows, macOS, y varias distribuciones de Linux), sistemas operativos móviles
+    (iOS, Android), sistemas embebidos (para dispositivos como routers o electrodomésticos inteligentes), sistemas de tiempo real (para aplicaciones que requieren respuestas rápidas y deterministas), y sistemas distribuidos (que coordinan múltiples computadoras para trabajar en conjunto).</p>
+
+<h1>7.Sistemas Operativos Para PC</h1>
+    <p>Los sistemas operativos más comunes para PC incluyen Microsoft Windows (como Windows 10), macOS (anteriormente OS X), y diversas distribuciones de Linux (como Ubuntu, Fedora, y Debian). 
+    Estos sistemas están diseñados para gestionar eficientemente recursos como la memoria, el procesador, los dispositivos de almacenamiento y periféricos en computadoras personales.</p>
+
+<h1>8.Sistemas Operativos Móviles</h1>
+    <p>En el ámbito de dispositivos móviles como smartphones y tablets, los sistemas operativos más utilizados son Android (desarrollado por Google), iOS (desarrollado por Apple) y en menor medida,
+     otros sistemas como Windows Phone (Microsoft) y algunos derivados de Linux. Estos sistemas operativos están optimizados para pantallas táctiles, conectividad móvil y gestión de aplicaciones diseñadas específicamente para estos dispositivos.</p>
+
+<h1>9.Sistema Operativo según el Ordenador y el Tipo de Aplicaciones</h1>
+    <p>Los sistemas operativos pueden variar según el tipo de computadora y las aplicaciones que se ejecuten. Por ejemplo, los sistemas operativos para servidores difieren de los sistemas para PCs o 
+    dispositivos móviles en términos de gestión de recursos y seguridad. También existen sistemas embebidos para dispositivos especializados como cajeros automáticos o sistemas de navegación.</p>
+<h1>10.Compatibilidad de los Sistema Operativo</h1>
+    <p>La compatibilidad de un sistema operativo se refiere a su capacidad para ejecutar aplicaciones y trabajar con hardware específico. Algunos sistemas operativos son más compatibles con ciertas 
+    aplicaciones y dispositivos que otros, lo que puede afectar la elección del sistema operativo dependiendo de las necesidades del usuario o de la empresa.</p>
+
+<h1>11.Cuál es la función básica de un Sistema Operativo</h1>
+    <p>La función básica de un sistema operativo es gestionar los recursos del hardware y proporcionar servicios a las aplicaciones de software. Esto incluye la gestión de memoria, el control de acceso 
+    a los recursos, la planificación del procesador, la gestión de archivos y la interfaz de usuario.</p>
+
+<h1>12.Mencione tres Sistema Operativo más utilizados</h1>
+    <p>Los tres sistemas operativos más utilizados son Microsoft Windows, macOS y Linux. Cada uno tiene sus propias características y es utilizado en diferentes tipos de dispositivos y por diferentes usuarios en todo el mundo.</p>
+
+<h1>13.Menciona algunas tareas que realizan los Sistemas Operativos</h1>
+    <p>Entre las tareas que realizan los sistemas operativos se incluyen la gestión de memoria (asignación y liberación de recursos), gestión del sistema de archivos (lectura, escritura y organización
+     de archivos en el almacenamiento), gestión de procesos (control y ejecución de programas), gestión de dispositivos (control de hardware como impresoras y unidades de disco) y gestión de seguridad (control de acceso y protección de datos).</p>
+
+<h1>14.Qué es un sistema operativo multitareas</h1>
+    <p>Un sistema operativo multitareas es aquel que permite ejecutar múltiples aplicaciones o procesos al mismo tiempo, compartiendo eficientemente los recursos del sistema como la CPU y la memoria
+     entre ellos. Esto permite a los usuarios realizar varias tareas simultáneamente sin que una aplicación monopolice los recursos del sistema.</p>
+
+<h1>15.Qué es un sistema operativo multiusuario</h1>
+    <p>Un sistema operativo multiusuario permite que múltiples usuarios accedan y utilicen el sistema simultáneamente. Cada usuario tiene su propio entorno de trabajo y configuración personalizada, con protección de datos y recursos para garantizar la seguridad y la privacidad.</p>
+
+<h1>16.Cómo funciona un sistema operativo</h1>
+    <p>Un sistema operativo funciona coordinando las actividades del hardware y el software. Administra los recursos del sistema, proporciona interfaces para que los usuarios y las aplicaciones interactúen con el hardware, y asegura que el sistema sea seguro y eficiente.</p>
+
+<h1>17.Cómo se utiliza un sistema operativo en un entorno gráfico</h1>
+    <p>En un entorno gráfico, el sistema operativo proporciona una interfaz gráfica de usuario (GUI) que permite a los usuarios interactuar con el sistema mediante iconos, ventanas y menús visuales.
+     Los sistemas operativos modernos como Windows y macOS utilizan GUIs parafacilitar la navegación y la ejecución de aplicaciones</p>
+
+<h1>18.Cuándo inicia el funcionamiento del Sistema Operativo</h1>
+    <p>El funcionamiento del sistema operativo inicia cuando se enciende o reinicia el ordenador. Este proceso se conoce como "arranque" (boot). Durante este proceso, se carga el núcleo del sistema 
+    operativo en la memoria principal (RAM) desde el disco duro u otro medio de almacenamiento, y se inicializan todos los componentes esenciales para que el sistema esté operativo</p>
+
+<h1>19.Mencione las dos interfaces que forman parte del Sistema Operativo</h1>
+    <p>Las dos interfaces principales que forman parte de un sistema operativo son:</p>
+
+    <li>Interfaz de línea de comandos (CLI): Permite interactuar con el sistema operativo mediante comandos escritos en texto plano.</li><BR>
+    <li>Interfaz gráfica de usuario (GUI): Proporciona una forma visual e intuitiva de interactuar con el sistema operativo mediante iconos, ventanas, menús y controles gráficos</li>
+
+<h1>20.Qué es un proceso en entorno de los sistemas operativos</h1>
+    <p>En el contexto de los sistemas operativos, un proceso es una instancia de un programa en ejecución. Un proceso incluye el código del programa, datos asociados, registros de estado, recursos 
+    del sistema (como memoria y CPU) y un contexto de ejecución. Los sistemas operativos gestionan múltiples procesos simultáneamente utilizando técnicas como la planificación de procesos para garantizar 
+    una asignación eficiente de los recursos del sistema.</p>
+
+
+<h1>21.Qué es un sistema operativo distribuido y centralizado</h1>
+    
+    <li>Sistema Operativo Centralizado: En este tipo de sistema, todas las funciones y recursos del sistema operativo son controlados y gestionados desde un solo lugar central. Los usuarios se conectan a este centro para acceder a los recursos compartidos.</li><BR>
+    <li>Sistema Operativo Distribuido: En contraste, un sistema operativo distribuido distribuye el control y la gestión de los recursos entre varios nodos o dispositivos interconectados. Los recursos y
+     servicios pueden estar distribuidos físicamente pero se presentan a los usuarios como un sistema coherente.</li>
+
+<h1>22.Mencione los sistemas de archivos utilizados por los Sistemas Operativos</h1>
+    <p>Algunos sistemas de archivos utilizados por los sistemas operativos incluyen:</p>
+
+    <li>FAT (File Allocation Table): Utilizado por sistemas operativos como MS-DOS y versiones antiguas de Windows.</li><BR>
+    <li>NTFS (New Technology File System): Utilizado por sistemas operativos modernos de Windows para ofrecer mayor seguridad y capacidad.</li><BR>
+    <li>ext4 (Fourth Extended Filesystem): Utilizado por sistemas operativos basados en Linux para soportar tamaños de archivos grandes y sistemas de archivos extendidos.</li><BR>
+    <li>HFS+ (Hierarchical File System Plus): Utilizado por sistemas operativos de macOS antes de macOS Catalina, que ahora utiliza APFS (Apple File System).</li>
+    
+<h1>23.Mencione otras de las características actuales de los sistemas operativos</h1>
+    <p>Algunas características actuales de los sistemas operativos incluyen:</p>
+
+    <li>Virtualización: Capacidad para ejecutar múltiples sistemas operativos o entornos aislados en un solo hardware físico.</li><BR>
+    <li>Seguridad mejorada: Implementación de técnicas avanzadas de cifrado, control de acceso y detección de amenazas para proteger datos y sistemas.</li><BR>
+    <li>Soporte para dispositivos móviles: Integración de funciones específicas para gestionar recursos en dispositivos móviles como smartphones y tablets.</li><BR>
+    <li>Actualizaciones automáticas: Capacidad para descargar e instalar automáticamente parches de seguridad y nuevas versiones del sistema operativo para mejorar la estabilidad y funcionalidad.</li>
+
+<h1>24.Que permite la exigencia de muchos controladores en un sistema operativo</h1>
+    <p>La exigencia de muchos controladores en un sistema operativo permite la compatibilidad y la gestión adecuada de hardware diverso. Los controladores son programas que facilitan la comunicación entre
+     el sistema operativo y los dispositivos de hardware conectados al sistema, como impresoras, tarjetas de red, tarjetas gráficas, etc. La disponibilidad de una amplia gama de controladores asegura que los
+     usuarios puedan utilizar hardware variado sin problemas de compatibilidad y puedan aprovechar al máximo las capacidades de sus dispositivos.</p>
 
 </body>
 </html>
