@@ -4,53 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investiga</title>
+    <title>Actividad Unidad2</title>
 </head>
 <body>
 
-    <h1 style ="color:rgb(16, 98, 250)">1.¿A qué se refieren con estructura del sistema operativo?</h1>
+<H1>1-¿Cuáles son las principales funciones de un kernel en la arquitectura 
+de un sistema operativo y cómo interactúa con el hardware?</H1>
+    <p>se encarga de tareas fundamentales como la gestión de memoria, la administración
+     de procesos y la coordinación de las operaciones de entrada/salida.</p>
 
-    <p>La estructura del sistema operativo se refiere a la organización interna del software que 
-    gestiona los recursos de hardware y proporciona servicios a los programas de aplicación. Esto
-    incluye cómo se dividen las diferentes partes del sistema operativo, cómo se comunican entre sí 
-    y cómo interactúan con el hardware subyacente.</p>
+<H2>Como interactúa </H2>
+
+    <p>Actúa como enlace entre recursos y procesos, asigna la memoria a los procesos y, si
+     algún proceso requiere acceso a algún componente de hardware, el kernel se lo adjudica.</p>
+
+<H1>2-¿Cómo se gestionan los procesos y cuál es la importancia de la multitarea en la eficiencia del sistema?</H1>
+
+<H2>Gestión de Procesos:</H2>
+    <li>Planificación de Procesos: El sistema operativo decide qué proceso se ejecuta en cada momento y cómo 
+    se asigna el tiempo de CPU a cada uno. Esto se hace mediante algoritmos de planificación que pueden priorizar la equidad, 
+    la prioridad, o minimizar el tiempo de respuesta, entre otros objetivos.</li><br>
+
+    <li>Creación y Terminación de Procesos: El sistema operativo permite la creación y destrucción de procesos. Cuando un
+    programa se ejecuta, se crea un proceso que representa la instancia de ese programa en ejecución. Cuando termina, el proceso se elimina.</li><br>
+
+    <li>Comunicación y Sincronización: Los procesos pueden necesitar comunicarse entre sí o sincronizarse para compartir recursos o asegurar la 
+    coherencia de los datos. El sistema operativo proporciona mecanismos para la comunicación y sincronización entre procesos, como semáforos, mutex, colas, etc.</li><br>
+
+    <li>Gestión de Recursos: El sistema operativo asigna y gestiona los recursos del sistema (CPU, memoria, dispositivos de entrada/salida) entre los procesos de manera
+     eficiente y equitativa.</li><br>
+   
+<H2>Importancia de la Multitarea:</H2>
+
+    <p>La multitarea es la capacidad de un sistema operativo para ejecutar múltiples tareas o procesos aparentemente simultáneamente. Aquí tienes por qué es importante para 
+    la eficiencia del sistema:</p><br>
+
+    <li>Mejora del Rendimiento: Permite que múltiples usuarios o aplicaciones compartan recursos de manera eficiente, maximizando la utilización de la CPU y otros recursos.</li><br>
+
+    <li>Incrementa la Productividad: Los usuarios pueden ejecutar varias aplicaciones al mismo tiempo, realizando diferentes tareas sin esperar a que una se complete antes de iniciar otra.</li><br>
+
+    <li>Tiempo de Respuesta: La multitarea proporciona un tiempo de respuesta más rápido a los usuarios al permitir que el sistema operativo maneje múltiples solicitudes de manera simultánea.</li><br>
+
+    <li>Optimización de Recursos: Al asignar recursos según las necesidades de cada proceso y gestionar la concurrencia de manera eficiente, la multitarea ayuda a optimizar el uso de la memoria y
+     otros recursos del sistema.</li><br>
+
+<H1>3-¿Qué medidas de seguridad se pueden implementar a nivel de sistema operativo para proteger una red, especialmente en entornos empresariales?</H1>
 
 
-<h1 style ="color:rgb(16, 98, 250)">2.¿Cuáles son los tipos de sistemas operativos hay?</h1> 
+<H2>1.Firewall:</H2>
 
-<h2 style ="color:rgb(245, 106, 14)" >1-Sistemas operativos de escritorio</h2>
+    <li>Configurar un firewall en cada dispositivo para controlar el tráfico de red entrante y saliente.</li><br>
 
-    <p>Diseñados para su uso en computadoras personales, como Windows, macOS
-     y varias distribuciones de Linux.</p>
+    <li>Definir reglas estrictas para permitir solo el tráfico necesario para el funcionamiento del sistema y las aplicaciones.</li><br>
 
-<h2 style ="color:rgb(245, 106, 14)" >2-Sistemas operativos móviles</h2>
+<H2>2.Actualizaciones y Parches:</H2>
 
-    <p>Diseñados para dispositivos móviles como teléfonos inteligentes 
-    y tabletas, como Android, iOS y Windows Phone.</p>
+    <li>Mantener actualizado el sistema operativo y todas las aplicaciones con los últimos parches de seguridad.</li><br>
 
-<h2 style ="color:rgb(245, 106, 14)" >3-Sistemas operativos de servidor</h2>
+    <li>Automatizar la instalación de actualizaciones para evitar vulnerabilidades conocidas.</li><br>
 
-    <p>Diseñados para gestionar servidores y redes, como Windows Server,
-     Linux Server y macOS Server.</p>
+<H2>3.Políticas de Seguridad:</H2>
 
-<h2 style ="color:rgb(245, 106, 14)" >4-Sistemas operativos en tiempo real</h2>
+    <li>Implementar políticas de seguridad claras y robustas que regulen el uso de contraseñas, acceso a recursos y dispositivos.</li><br>
 
-    <p>Diseñados para sistemas que necesitan respuestas inmediatas a eventos,
-     como controladores industriales y sistemas de control de tráfico.</p>
+    <li>Aplicar el principio de privilegio mínimo para restringir el acceso a recursos sensibles solo a usuarios autorizados.</li><br>
 
-<h2 style ="color:rgb(245, 106, 14)" >5-Sistemas operativos integrados</h2>
+<H2>4.Auditorías y Monitoreo:</H2>
+    <li>Establecer sistemas de monitoreo para detectar actividades inusuales o posibles intrusiones en tiempo real.</li><br>
 
-    <p>Diseñados para sistemas embebidos y dispositivos específicos, 
-    como sistemas de navegación GPS y electrodomésticos inteligentes.</p>
+    <li>Realizar auditorías periódicas de seguridad para identificar y corregir posibles debilidades en la configuración del sistema.</li><br>
 
-<h1 style ="color:rgb(16, 98, 250)">3.¿Que es el Kernel?</h1> 
+<H2>5.Cifrado de Datos:</H2>
+    <li>Utilizar cifrado para proteger la integridad y confidencialidad de los datos sensibles tanto en reposo como en tránsito.</li><br>
 
-<p>El kernel es la parte central de un sistema operativo que proporciona
- una interfaz entre el software de más alto nivel y el hardware de la computadora. 
- Es responsable de administrar recursos de hardware como la memoria, el procesador,
- los dispositivos de entrada/salida y las comunicaciones entre procesos. En resumen,
- el kernel es el corazón del sistema operativo, encargado de gestionar y coordinar todas 
- las actividades del sistema.</p>
+    <li>Implementar políticas que exijan el cifrado de datos en dispositivos móviles y unidades de almacenamiento externo.</li><br>
+
+<H2>6.Control de Acceso:</H2>
+    <li>Configurar controles de acceso basados en roles para limitar quién puede acceder a qué recursos y qué acciones pueden realizar.</li><br>
+
+    <li>Implementar autenticación multifactor (MFA) para fortalecer la autenticación de usuarios.</li><br>
+
+<H2>7.Gestión de Vulnerabilidades:</H2>
+
+    <li>Utilizar herramientas de escaneo de vulnerabilidades para identificar y corregir posibles vulnerabilidades en el sistema operativo y las aplicaciones.</li><br>
+
+<H2>8.Protección contra Malware:</H2>
+
+    <li>Instalar y mantener actualizado software antivirus y antimalware en todos los dispositivos.</li><br>
+
+    <li>Configurar análisis periódicos y en tiempo real para detectar y mitigar amenazas de malware.</li><br>
+
+
+
 
 </body>
 </html>
