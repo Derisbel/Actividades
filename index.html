@@ -3,205 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos de Páginas Web</title>
-    <link rel="stylesheet" href="styles3.css">
-
+    <title>Preguntas sobre CSS</title>
+    <link rel="stylesheet" href="styles4.css">
+    
 </head>
 <body>
 
-<header>
-    <h1>Elementos de Páginas Web</h1>
-</header>
+    <h1>Preguntas sobre CSS</h1>
 
-<section>
-    <h2>I. Orígenes de la Web</h2>
-    <h3>1. Web 2.0</h3>
-    <p>La Web 2.0 se refiere a la evolución hacia un modelo más interactivo y colaborativo, promoviendo una mayor participación y democratización de la información.</p>
-    
-    <h3>2. Web 3.0</h3>
-    <p>También conocida como la web semántica, busca mejorar la conectividad de datos y la inteligencia de las aplicaciones mediante tecnologías como IA y blockchain.</p>
-    
-    <h3>3. W3C y los estándares</h3>
-    <p>La W3C desarrolla estándares abiertos para asegurar el crecimiento a largo plazo de la web, mejorando su interoperabilidad y accesibilidad.</p>
-</section>
+    <h2>1. Definición de CSS</h2>
+    <p>CSS (Cascading Style Sheets) es un lenguaje de estilos utilizado para describir la presentación de un documento escrito en HTML o XML. Permite controlar el diseño, el formato y la apariencia visual de las páginas web.</p>
 
-<section>
-    <h2>II. Lenguajes de Etiquetas</h2>
-    <h3>1. SGML</h3>
-    <p>Base de muchos lenguajes de marcado, permite definir la estructura de documentos.</p>
-    
-    <h3>2. XML</h3>
-    <p>Permite definir estructuras de datos personalizadas y es ampliamente utilizado para el intercambio de datos.</p>
-    
-    <h3>3. HTML</h3>
-    <p>Lenguaje de marcado estándar para crear páginas web, definiendo la estructura del contenido.</p>
-    
-    <h3>4. XHTML</h3>
-    <p>Versión más estricta de HTML que sigue reglas de XML, mejorando compatibilidad.</p>
-    
-    <h3>5. HTML5</h3>
-    <p>Última versión de HTML, ofrece nuevas características como soporte para multimedia y mejora en la semántica.</p>
-</section>
+    <h2>2. Funcionamiento Básico de CSS</h2>
+    <p>CSS funciona mediante la asociación de estilos a elementos HTML a través de selectores. Los estilos se aplican a los elementos definidos en las reglas CSS, permitiendo cambiar colores, fuentes, márgenes, y más.</p>
 
-<section>
-    <h2>III. Otros Lenguajes Relacionados al Desarrollo Web</h2>
+    <h2>3. Incluir CSS en un archivo HTML</h2>
+    <p>Existen tres formas de incluir CSS en un archivo HTML:</p>
     <ul>
-        <li><strong>CSS/CSS3:</strong> Define la presentación visual de documentos HTML.</li><br>
-        <li><strong>JavaScript:</strong> Lenguaje de programación del lado del cliente que permite interactividad.</li><br>
-        <li><strong>Ajax:</strong> Técnica para actualizar páginas web asíncronamente.</li><br>
-        <li><strong>Tecnologías del lado del servidor:</strong> Incluyen lenguajes como PHP, Python y Node.js.</li><br>
-        <li><strong>Navegadores:</strong> Programas que permiten acceder y visualizar contenido web.</li><br>
-        <li><strong>Motores renderizados:</strong> Interpretan y muestran el contenido de las páginas web.</li><br>
-    </ul>
-</section>
-
-<section>
-    <h2>IV. Herramientas de Desarrollo</h2>
-
-    <h4>1.	Software WYSIWYG (What You See Is What You Get).</h4>
-
-        <p>Estas herramientas permiten a los desarrolladores crear contenido web visualmente, sin necesidad de escribir código manualmente. 
-            <strong> Ejemplos incluyen:</strong> Adobe Dreamweaver y WordPress.</p>
-
-
-    <h4>2.	Otras alternativas.</h4>
-    <ul>
-        <li><strong>Figma:</strong> Herramienta de diseño colaborativo que permite crear prototipos y interfaces de usuario.</li> <br>
-        <li><strong>InVision:</strong> Plataforma para diseñar, prototipar y colaborar en proyectos de diseño web.</li><br>
-        <li><strong>Zeplin:</strong> Herramienta que facilita la colaboración entre diseñadores y desarrolladores al proporcionar especificaciones de diseño.</li><br>
-        <li><strong>GitHub:</strong> Plataforma de desarrollo colaborativo que permite gestionar proyectos de software y controlar versiones de código.</li><br>
+        <li><strong>Inline</strong>: usando el atributo style en el elemento HTML.</li><br>
+        <li><strong>Internal</strong>: dentro de una etiqueta style en la sección ,head del documento.</li><br>
+        <li><strong>External</strong>: vinculando un archivo CSS externo usando la etiqueta ,link.</li><br>
     </ul>
 
-    <h4>3.	Inspección de código desde el navegador.</h4>
-   
-        <p>La mayoría de los navegadores modernos incluyen herramientas de desarrollo que permiten inspeccionar, editar y depurar el código HTML, CSS y JavaScript de las páginas web en tiempo real. 
-            Esto es esencial para el desarrollo y la optimización de sitios web.</p>
+    <h2>4. Definición de una regla CSS</h2>
+    <p>Una regla CSS define un conjunto de estilos aplicados a uno o más selectores. Consiste en un selector y un bloque de declaración que contiene propiedades y valores.</p>
 
-
-
-
-
-</section>
-
-<section>
-    <h2>Tema 2: El Diseño De Una Página Web</h2>
-    <h3>I. Tipos de Páginas Web</h3>
-
-        <h4>1. Páginas estáticas.</h4>
-
-            <p>Contenido fijo que no cambia a menos que se edite manualmente. Suelen ser simples y se utilizan para presentar información básica,
-            como perfiles de empresa o portafolios.</p>
-    
-
-        <h4>2. Páginas dinámicas.</h4>
-  
-            <p>Contenido que cambia en función de la interacción del usuario o datos en tiempo real. Utilizan lenguajes del lado del servidor 
-                y bases de datos para ofrecer experiencias personalizadas.</p>
-     
-
-        <h4>3. Blogs: Actualización frecuente de contenido.</h4>
-   
-            <p>Páginas enfocadas en contenido actualizado frecuentemente, como artículos y entradas de opinión. Permiten interacción mediante comentarios 
-                y son una forma popular de compartir información.</p>
-   
-
-        <h4>4. Tiendas en línea: Diseñadas para la venta de productos.</h4>
-    
-            <p>Páginas diseñadas para la venta de productos o servicios. Incluyen catálogos, carritos de compra y sistemas de pago.</p>
-
-  
-        <h4>5. Redes sociales: Interacción y compartición de contenido.</h4>
-    
-            <p>Plataformas que permiten a los usuarios interactuar, compartir contenido y conectarse. Ejemplos incluyen Facebook, Instagram y Twitter.</p>
-
-
-
-        <h4>6. Páginas de aterrizaje: Conversión de visitantes en clientes.</h4>
-       
-            <p>Diseñadas para convertir visitantes en clientes potenciales. Suelen tener un enfoque específico, como promociones o captación de correos electrónicos.</p>
-    
-        </section>
-
-<section>
-    <h3>II. Puntos Básicos en la Elaboración de una Página Web</h3>
+    <h2>5. Elemento de una regla CSS</h2>
+    <p>Una regla CSS se compone de varios elementos:</p>
     <ul>
-        <li><strong>Objetivo claro:</strong> Definir el propósito de la página.</li> <br>
-        <li><strong>Investigación de audiencia:</strong> Comprender al público objetivo.</li> <br>
-        <li><strong>Estructura y navegación:</strong> Planificar una jerarquía clara.</li> <br>
-        <li><strong>Diseño responsivo:</strong> Adaptabilidad a diferentes dispositivos.</li> <br>
-        <li><strong>Contenido de calidad:</strong> Crear contenido relevante.</li> <br>
-        <li><strong>Optimización para SEO:</strong> Mejorar visibilidad en motores de búsqueda.</li> <br>
-    </ul>
-</section>
-
-<section>
-    <h2>Tema 3: Estructura De Una Página Web</h2>
-
-    <h3>I. Jerarquía de Directorio de un Proyecto Web</h3>
-
-    <h4>Raíz del proyecto</h4>
-   
-        <p>Carpeta principal que contiene todos los archivos del sitio.</p>
-    
-
-    <h4>   Subcarpetas comunes:</h4>
-
-    <ul>
-        <li><strong>css:</strong> Archivos CSS</li>   
-        <li><strong>js:</strong> Archivos JavaScript</li>
-        <li><strong>images:</strong> Imágenes utilizadas en el sitio.</li>
-        <li><strong>fonts:</strong> Fuentes personalizadas</li>
-        <li><strong>pages:</strong> Páginas HTML individuales</li>
-        <li><strong>assets:</strong> Otros recursos como videos y documentos.</li>
+        <li><strong>Regla</strong>: Conjunto completo que incluye selector y bloque de declaración.</li><br>
+        <li><strong>Selector</strong>: Identifica los elementos HTML a los que se aplicarán los estilos.</li><br>
+        <li><strong>Bloque de declaración</strong>: Contiene las propiedades y valores de estilo.</li><br>
+        <li><strong>Propiedad</strong>: Especifica el aspecto que se desea modificar (por ejemplo, color, font-size).</li><br>
+        <li><strong>Valor</strong>: Define cómo se aplicará la propiedad (por ejemplo, red, 16px).</li><br>
     </ul>
 
-    <h3>II. Elementos de Estructura para el Diseño de una Página Web</h3>
+    <h2>6. Medios CSS</h2>
+    <p>Los medios CSS permiten aplicar estilos específicos según el dispositivo o las características del entorno. Se utilizan consultas de medios (@media) para adaptar el diseño a diferentes pantallas, como móviles o computadoras de escritorio.</p>
 
-        <h4>1. Regla utilizada para validar y certificar una página web</h4>
+    <h2>7. Comentarios CSS</h2>
+    <p>Los comentarios en CSS se utilizan para documentar el código y se escriben entre /* y */. No afectan la presentación del documento.</p>
 
-        <p>Se utilizan validadores como el W3C Markup Validation Service para comprobar que el código HTML
-            y CSS cumple con los estándares establecidos. Esto asegura que la página funcione correctamente en diferentes navegadores y dispositivos.</p>
-
-
-        <h4>2.	Reglas para escribir HTML</h4>
-
-    <ul>
-        <li>Utilizar etiquetas correctamente anidadas.</li>
-        <li>Cerrar todas las etiquetas.</li>
-        <li>Usar atributos válidos y significativos.</li>
-        <li>Seguir una estructura semántica que mejore la accesibilidad y SEO.</li>
-    </ul>
-
-    <h4>3. Estructura básica: Incluye secciones head y body.</h4>
-    <ul>
-        <li>Esta estructura incluye las secciones fundamentales:
-            head (metadatos y enlaces a recursos) y body (contenido visible).</li>
-        </ul>
-    
-</section>
-
-<section>
-    <h3>III. (Escribir en hoja de maquinilla o cuaderno).</h3>
-    <ul>
-        <li>1.	Etiquetas nombre al menos 40. </li>
-        <li>2.	Atributos</li>
-        <li>3.	Elemento HTML</li>
-        <li>4.	Elementos en línea y en bloque</li>
-    <ul>
-
-</section>
-
-<section>
-    <h4>Parte 3 del Tema 3(Escribir en hoja de maquinilla o cuaderno).</h4>
-    <p><strong>Parte 1 y 2</strong></p>
-    <img src="C:\Users\Administrador\Desktop\georgina\imagenes\imagenes de clase\html foto.jpg" alt="Ejemplo de Elementos Web" style="max-width: 40%; height: auto;" />
-
-    <p><strong>Parte 3 y 4</strong></p>
-    <img src="C:\Users\Administrador\Desktop\georgina\imagenes\imagenes de clase\html foto1.jpg" alt="Ejemplo de Elementos Web" style="max-width: 40%; height: auto;" />
-
-</section>
-
-
+    <h2>8. Sintaxis de la definición de las propiedades CSS</h2>
+    <p>La sintaxis para definir propiedades en CSS es la siguiente:</p>
+    <pre>
+selector {
+  propiedad: valor;
+}
+    </pre>
+    <p>Por ejemplo:</p>
+    <pre>
+p {
+  color: blue;
+  font-size: 16px;
+}
+    </pre>
 </body>
 </html>
-
