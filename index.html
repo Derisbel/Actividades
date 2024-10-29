@@ -3,60 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas sobre CSS</title>
-    <link rel="stylesheet" href="styles4.css">
-    
+    <title>Resumen de Temas CSS</title>
+    <link rel="stylesheet" href="styles5.css">
+   
 </head>
 <body>
 
-    <h1>Preguntas sobre CSS</h1>
+    <h1>Resumen de Temas CSS</h1>
 
-    <h2>1. Definición de CSS</h2>
-    <p>CSS (Cascading Style Sheets) es un lenguaje de estilos utilizado para describir la presentación de un documento escrito en HTML o XML. Permite controlar el diseño, el formato y la apariencia visual de las páginas web.</p>
+    <h2>Tema 1 - Texto</h2>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Valor Inicial</th>
+            <th>Descripción</th>
+        </tr>
+        <tr><td>color</td><td>black</td><td>Define el color del texto.</td></tr>
+        <tr><td>font-family</td><td>serif</td><td>Especifica la fuente del texto.</td></tr>
+        <tr><td>font-size</td><td>medium</td><td>Define el tamaño de la fuente.</td></tr>
+        <tr><td>font-weight</td><td>normal</td><td>Controla el grosor de la fuente.</td></tr>
+        <tr><td>font-style</td><td>normal</td><td>Define el estilo de la fuente.</td></tr>
+        <tr><td>font-variant</td><td>normal</td><td>Especifica la variante de la fuente.</td></tr>
+        <tr><td>text-align</td><td>left</td><td>Especifica la alineación del texto.</td></tr>
+        <tr><td>line-height</td><td>normal</td><td>Controla la altura de la línea.</td></tr>
+        <tr><td>text-decoration</td><td>none</td><td>Define la decoración del texto.</td></tr>
+        <tr><td>text-transform</td><td>none</td><td>Controla la transformación del texto.</td></tr>
+        <tr><td>vertical-align</td><td>baseline</td><td>Define la alineación vertical del texto.</td></tr>
+    </table>
 
-    <h2>2. Funcionamiento Básico de CSS</h2>
-    <p>CSS funciona mediante la asociación de estilos a elementos HTML a través de selectores. Los estilos se aplican a los elementos definidos en las reglas CSS, permitiendo cambiar colores, fuentes, márgenes, y más.</p>
+    <h2>Tema 2 - Enlaces</h2>
+    <table>
+        <tr>
+            <th>Característica</th>
+            <th>Propiedades</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Tamaño, Color y Decoración</td>
+            <td>font-size, color, text-decoration</td>
+            <td>Controlan el tamaño de fuente, color del texto y decoración del enlace.</td>
+        </tr>
+        <tr>
+            <td>Decoración Personalizada</td>
+            <td>border, background-color, padding</td>
+            <td>Permiten personalizar el aspecto del enlace.</td>
+        </tr>
+    </table>
 
-    <h2>3. Incluir CSS en un archivo HTML</h2>
-    <p>Existen tres formas de incluir CSS en un archivo HTML:</p>
-    <ul>
-        <li><strong>Inline</strong>: usando el atributo style en el elemento HTML.</li><br>
-        <li><strong>Internal</strong>: dentro de una etiqueta style en la sección ,head del documento.</li><br>
-        <li><strong>External</strong>: vinculando un archivo CSS externo usando la etiqueta ,link.</li><br>
-    </ul>
+    <h2>Tema 3 - Imágenes</h2>
+    <table>
+        <tr>
+            <th>Característica</th>
+            <th>Propiedades</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Anchura y Altura</td>
+            <td>width, height</td>
+            <td>Definen el tamaño de la imagen.</td>
+        </tr>
+        <tr>
+            <td>Eliminar el Borde</td>
+            <td>border</td>
+            <td>Establecer border: none; elimina cualquier borde alrededor de la imagen.</td>
+        </tr>
+    </table>
 
-    <h2>4. Definición de una regla CSS</h2>
-    <p>Una regla CSS define un conjunto de estilos aplicados a uno o más selectores. Consiste en un selector y un bloque de declaración que contiene propiedades y valores.</p>
+    <h2>Tema 4 - Listas</h2>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Valor Inicial</th>
+            <th>Descripción</th>
+        </tr>
+        <tr><td>list-style-type</td><td>disc</td><td>Define el tipo de marcador para las listas.</td></tr>
+        <tr><td>list-style-position</td><td>outside</td><td>Especifica la posición de los marcadores.</td></tr>
+        <tr><td>list-style-image</td><td>none</td><td>Permite usar una imagen como marcador.</td></tr>
+        <tr><td>list-style</td><td>none</td><td>Propiedad abreviada para las anteriores.</td></tr>
+    </table>
 
-    <h2>5. Elemento de una regla CSS</h2>
-    <p>Una regla CSS se compone de varios elementos:</p>
-    <ul>
-        <li><strong>Regla</strong>: Conjunto completo que incluye selector y bloque de declaración.</li><br>
-        <li><strong>Selector</strong>: Identifica los elementos HTML a los que se aplicarán los estilos.</li><br>
-        <li><strong>Bloque de declaración</strong>: Contiene las propiedades y valores de estilo.</li><br>
-        <li><strong>Propiedad</strong>: Especifica el aspecto que se desea modificar (por ejemplo, color, font-size).</li><br>
-        <li><strong>Valor</strong>: Define cómo se aplicará la propiedad (por ejemplo, red, 16px).</li><br>
-    </ul>
+    <h2>Tema 5 - Tablas</h2>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Se Aplica a</th>
+            <th>Valor Inicial</th>
+            <th>Descripción</th>
+        </tr>
+        <tr><td>border-collapse</td><td>table</td><td>separate</td><td>Define si los bordes de las celdas deben colapsar.</td></tr>
+        <tr><td>border-spacing</td><td>table</td><td>0</td><td>Define el espacio entre los bordes de las celdas.</td></tr>
+        <tr><td>empty-cells</td><td>table</td><td>show</td><td>Controla si se muestran las celdas vacías.</td></tr>
+        <tr><td>caption-side</td><td>table</td><td>top</td><td>Especifica la ubicación de la leyenda de la tabla.</td></tr>
+    </table>
 
-    <h2>6. Medios CSS</h2>
-    <p>Los medios CSS permiten aplicar estilos específicos según el dispositivo o las características del entorno. Se utilizan consultas de medios (@media) para adaptar el diseño a diferentes pantallas, como móviles o computadoras de escritorio.</p>
-
-    <h2>7. Comentarios CSS</h2>
-    <p>Los comentarios en CSS se utilizan para documentar el código y se escriben entre /* y */. No afectan la presentación del documento.</p>
-
-    <h2>8. Sintaxis de la definición de las propiedades CSS</h2>
-    <p>La sintaxis para definir propiedades en CSS es la siguiente:</p>
-    <pre>
-selector {
-  propiedad: valor;
-}
-    </pre>
-    <p>Por ejemplo:</p>
-    <pre>
-p {
-  color: blue;
-  font-size: 16px;
-}
-    </pre>
 </body>
 </html>
